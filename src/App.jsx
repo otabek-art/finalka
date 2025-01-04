@@ -3,6 +3,7 @@ import './App.scss'
 import Header from './components/Header/Header'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
+import Robot from './components/Robot/Robot'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
 <Route path='/' element ={<Home/>}/>
 
 </Routes>
+<Robot/>
 </>
   )
 }
