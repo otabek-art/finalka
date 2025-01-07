@@ -27,6 +27,7 @@ const Robot = () => {
             Portal, Gaming Online News Portal, and other News services websites. It is suitable
             for any kind of small business activity.
           </p>
+          <button className='explore-button '>Explore More</button>
        
         </div>
       </div>
