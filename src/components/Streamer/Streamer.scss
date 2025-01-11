@@ -1,0 +1,74 @@
+.streamer-container {
+    text-align: center;
+    padding: 40px 20px;
+  
+  
+    .streamer-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+  
+      .streamer-subtitle {
+        font-size: 1.5rem;
+        color: #666;
+      }
+  
+      .streamer-highlight {
+        color: #e91e63;
+        text-decoration: underline;
+      }
+    }
+  
+    .streamer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+  
+      .streamer-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+  
+        .streamer-image {
+          width: 100%;
+          padding-top: 56.25%; // Соотношение сторон 16:9
+          background-size: cover;
+          background-position: center;
+          border-radius: 20px;
+          position: relative;
+  
+          .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+  
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+  
+            &::before {
+              content: \"\"; // Стрелка внутри кнопки\n            display: inline-block;\n            border-style: solid;\n            border-width: 15px 0 15px 25px;\n            border-color: url(/public/image7.png) transparent transparent transparent #fff;\n            transform: translateX(5px);\n          }
+          }
+        }
+      }
+    }
+  }
+            }

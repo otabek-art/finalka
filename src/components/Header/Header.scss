@@ -40,7 +40,7 @@
             font-size: 1rem;
             transition: color 0.3s;
       
-            font-size: 20px;
+            font-size: 18px;
             margin-right: 30px;
   
             &:hover {
@@ -82,7 +82,7 @@
       }
     }
   
-    @media (max-width: 768px) {
+    @media (max-width: 820px) {
       &__nav {
         position: absolute;
         top: 0%;

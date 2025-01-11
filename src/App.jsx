@@ -5,6 +5,8 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Robot from './components/Robot/Robot'
 import Catalog from './components/Catalog/Catalog'
+import Streamer from './components/Streamer/Streamer'
+import Reviews from './components/Revievs/Revievs'
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
 </Routes>
 <Robot/>
 <Catalog/>
+<Streamer/>
+<Reviews/>
 </>
   )
 }
