@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "PRO game Deluxe",
+      "price": 10000.0,
+      "oldPrice": 300000.0,
+      "reviews": 125,
+      "image": "image 1.svg"
+    },
+    {
+      "id": 2,
+      "name": "NINJA game Deluxe",
+      "price": 15000.0,
+      "oldPrice": 17000.0,
+      "reviews": 90,
+      "image": "image 2.svg"
+    },
+    {
+      "id": 3,
+      "name": "Humankind digital game Deluxe",
+      "price": 150.0,
+      "oldPrice": 170.0,
+      "reviews": 125,
+      "image": "image 3.svg"
+    },
+    {
+      "id": 4,
+      "name": "Humankind digital game Deluxe",
+      "price": 150.0,
+      "oldPrice": 170.0,
+      "reviews": 125,
+      "image": "image 4.svg"
+    }
+  ]
+}

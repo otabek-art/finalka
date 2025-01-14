@@ -33,7 +33,7 @@
         gap: 20px;
 
   
-        li {
+        
           a {
             text-decoration: none;
             color: #fff;
@@ -46,20 +46,9 @@
             &:hover {
               color: #ff4b88;
             }
-          }
+          
   
-          .header__button {
-            background: #ff4b88;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            color: #fff;
-            font-weight: bold;
-            transition: background 0.3s;
-  
-            &:hover {
-              background: #ff74a5;
-            }
-          }
+          
         }
       }
     }
@@ -111,3 +100,15 @@
     }
   }
   
+  .header__button {
+    background: #ff4b88;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #ff74a5;
+    }
+  }

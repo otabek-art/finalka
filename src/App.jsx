@@ -3,10 +3,7 @@ import './App.scss'
 import Header from './components/Header/Header'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import Robot from './components/Robot/Robot'
-import Catalog from './components/Catalog/Catalog'
-import Streamer from './components/Streamer/Streamer'
-import Reviews from './components/Revievs/Revievs'
+import Admin from './components/admin/Admin'
 
 const App = () => {
   return (
@@ -15,12 +12,16 @@ const App = () => {
 
 <Routes>
 <Route path='/' element ={<Home/>}/>
+<Route path='/about' element ={<Home/>}/>
+<Route path='/contact' element ={<Home/>}/>
+
+<Route path='/' element ={<Home/>}/>
+<Route path='/' element ={<Home/>}/>
+<Route path='/admin' element = {<Admin/>} />
 
 </Routes>
-<Robot/>
-<Catalog/>
-<Streamer/>
-<Reviews/>
+
+
 </>
   )
 }

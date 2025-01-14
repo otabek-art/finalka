@@ -1,51 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Catalog.scss';
 
 const Catalog = () => {
-  const products = [
-    {
-      id: 1,
-      name: 'Humankind digital game Deluxe',
-      price: 150.0,
-      oldPrice: 170.0,
-      reviews: 125,
-      image: 'image 1.svg', // Замените на реальный путь к картинке
-    },
-    {
-      id: 2,
-      name: 'Humankind digital game Deluxe',
-      price: 150.0,
-      oldPrice: 170.0,
-      reviews: 125,
-      image: 'image 2.svg',
-    },
-    {
-      id: 3,
-      name: 'Humankind digital game Deluxe',
-      price: 150.0,
-      oldPrice: 170.0,
-      reviews: 125,
-      image: 'image 3.svg',
-    },
-    {
-      id: 4,
-      name: 'Humankind digital game Deluxe',
-      price: 150.0,
-      oldPrice: 170.0,
-      reviews: 125,
-      image: 'image 4.svg',
-    },
-  ];
+  const [products, setProducts] = useState([]);
+
+  // Fetch products from db.json
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/products');
+        setProducts(response.data);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true,     // Whether animation should happen only once
+    });
+  }, []);
 
   return (
     <section className="catalog">
-      <h2>Our Featured Game</h2>
-      <p className="catalog-description">
+      <h2 data-aos="fade-down">Our Featured Game</h2>
+      <p className="catalog-description" data-aos="fade-up">
         Gaming and Sports Template that is designed to build modern Online Game, Gaming News Portal, and more.
       </p>
       <div className="catalog-grid">
         {products.map((product) => (
-          <div className="catalog-item" key={product.id}>
+          <div className="catalog-item" key={product.id} data-aos="fade-up">
             <img src={product.image} alt={product.name} className="catalog-image" />
             <h3>{product.name}</h3>
             <div className="catalog-reviews">

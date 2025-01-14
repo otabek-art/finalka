@@ -21,6 +21,13 @@ const Reviews = () => {
       name: 'Alice Wonder',
       role: 'Game Designer',
     },
+    {
+      id: 3,
+      image: 'https://i.pinimg.com/originals/64/11/7f/64117fa1f71783a834d0d96abcf06e80.jpg',
+      text:'When I was 8 I realized that I wanted to create games so this is my purpose',
+      name:'Alex Hirsh',
+      role: 'Direktor and Founder',
+    }
     // Добавьте больше отзывов по необходимости
   ];
 

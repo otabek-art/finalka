@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Header.scss';
+import Home from '../../pages/Home';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,11 +12,11 @@ const Header = () => {
     <img className='header-logo' src="https://insideupgames.com/wp-content/uploads/2018/01/icon-IUG.png" alt="" />
       <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#get-started" className="header__button">Get Started</a></li>
+          <Link to="/">Home</Link>
+          <Link to="/games">Games</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/get-started" className="header__button">Get Started</Link>
         </ul>
       </nav>
       <button
