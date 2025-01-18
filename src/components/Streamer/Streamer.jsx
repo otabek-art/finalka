@@ -13,14 +13,22 @@ const Streamer = () => {
         <div className="streamer-card">
           <div className="streamer-image" style={{ backgroundImage: "url('/public/image5.svg')" }}>
             <div className="play-button">
+            <a target="_blank" href="https://www.youtube.com/watch?v=q7j2d6YCQbg">
                 <img src="/public/image7.png" alt="" />
+                </a>
             </div>
           </div>
         </div>
         <div className="streamer-card">
-          <div className="streamer-image" style={{ backgroundImage: "url('/public/image6.svg')" }}>
+          
+          <div className="streamer-image" style={{ backgroundImage: "url('/public/image6.svg')" }}
+          
+          >
             <div className="play-button">
+              <a target="_blank" href="https://www.youtube.com/watch?v=q7j2d6YCQbg">
                 <img src="/public/image7.png" alt="" />
+
+              </a>
             </div>
           </div>
         </div>
