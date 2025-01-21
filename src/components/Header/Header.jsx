@@ -16,7 +16,11 @@ const Header = () => {
           <Link to="/games">Games</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/get-started" className="header__button">Get Started</Link>
+          <Link to="/basket" className='header__img' >
+          <img src="https://png.klev.club/uploads/posts/2024-06/png-klev-club-rrd8-p-korzina-ikonka-belaya-png-12.png" alt="" />    </Link>
+      
+          <Link to="/Registration" className="header__button">Get Started</Link>
+      
         </ul>
       </nav>
       <button

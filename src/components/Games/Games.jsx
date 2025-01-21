@@ -1,68 +1,75 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "./Games.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import './Games.scss';
 
 const Games = () => {
-  const gamesData = [
+  const games = [
     {
-      title: "Sylvanas Windrunner Kill",
-      price: "220K",
-      image: "/path-to-image1.jpg", // Замените на путь к вашим изображениям
+      id: 1,
+      title: 'Heroic Dungeon Keys',
+      description: 'Access Burning Crusade dungeons on heroic difficulty.',
+      image: 'https://via.placeholder.com/300x200', // Замените на свои изображения
+      price: 220,
     },
     {
-      title: "Sylvanas Windrunner Kill",
-      price: "220K",
-      image: "/path-to-image2.jpg",
+      id: 2,
+      title: 'Gladiator Title Boost',
+      description: 'Get Gladiator title in WoW Shadowlands.',
+      image: 'https://via.placeholder.com/300x200', // Замените на свои изображения
+      price: 300,
     },
     {
-      title: "Sylvanas Windrunner Kill",
-      price: "220K",
-      image: "/path-to-image3.jpg",
-    },
-    {
-      title: "Sylvanas Windrunner Kill",
-      price: "220K",
-      image: "/path-to-image4.jpg",
+      id: 3,
+      title: 'Sylvanas Windrunner Kill',
+      description: 'Defeat Sylvanas Windrunner in WoW.',
+      image: 'https://via.placeholder.com/300x200', // Замените на свои изображения
+      price: 400,
     },
   ];
 
   return (
-    <section className="games-section">
-      <div className="games-header">
-        <h1>Earn on the Game and Spend on the Game</h1>
-        <p>Buy services for gold and play to your heart's content</p>
-      </div>
+    <div className="games-container">
+      <h1 className="games-title">Available Games</h1>
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={3}
+        modules={[Navigation, Pagination]}
+        spaceBetween={30}
+        slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 5000 }}
         breakpoints={{
-          320: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
         }}
-        className="games-swiper"
       >
-        {gamesData.map((game, index) => (
-          <SwiperSlide key={index} className="game-card">
-            <div className="game-image">
-              <img src={game.image} alt={game.title} />
-            </div>
-            <div className="game-info">
-              <h2>{game.title}</h2>
-              <p>{game.price} 🪙</p>
+        {games.map((game) => (
+          <SwiperSlide key={game.id}>
+            <div className="game-card">
+              <img src={game.image} alt={game.title} className="game-image" />
+              <h3>{game.title}</h3>
+              <p>{game.description}</p>
+              <div className="game-footer">
+                <span className="game-price">{game.price}$</span>
+                <Link to={`/game/${game.id}`} className="view-profile">
+                  View Profile
+                </Link>
+              </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </div>
   );
 };
 

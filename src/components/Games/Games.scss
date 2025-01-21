@@ -1,94 +1,38 @@
-.games-section {
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #1f003e, #4d018d);
-    color: #fff;
-    text-align: center;
-  }
-  
-  .games-header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #ff85ff;
-    animation: fadeInDown 1s ease-in-out;
-  }
-  
-  .games-header p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #ccc;
-    animation: fadeInUp 1s ease-in-out;
-  }
-  
-  .games-swiper {
-    padding: 20px 0;
-  }
-  
-  .game-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .game-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  }
-  
-  .game-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .game-info {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .game-info h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #ff85ff;
-  }
-  
-  .game-info p {
-    font-size: 1rem;
-    color: #fff;
-  }
-  
-  /* Анимации */
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Адаптив */
-  @media (max-width: 768px) {
-    .games-header h1 {
-      font-size: 1.5rem;
-    }
-  
-    .games-header p {
-      font-size: 0.9rem;
-    }
-  }
-  
+.games-container {
+  padding: 20px;
+  background-color: #0d1117;
+  color: white;
+}
+
+.game-card {
+  background: #1e2026;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.game-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.game-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-price {
+  font-size: 18px;
+  color: gold;
+}
+
+.view-profile {
+  background: gold;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}

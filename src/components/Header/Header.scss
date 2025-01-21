@@ -107,8 +107,16 @@
     color: #fff;
     font-weight: bold;
     transition: background 0.3s;
+    align-items: center;  
 
     &:hover {
       background: #ff74a5;
     }
+  }
+
+  .header__img{
+    height: 50px;
+    width: 50px;
+
+    display: flex;
   }

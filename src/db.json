@@ -3,34 +3,48 @@
     {
       "id": 1,
       "name": "PRO game Deluxe",
-      "price": 10000.0,
-      "oldPrice": 300000.0,
+      "price": 10000,
+      "oldPrice": 300000,
       "reviews": 125,
-      "image": "image 1.svg"
+      "image": "image1.svg"
     },
     {
       "id": 2,
       "name": "NINJA game Deluxe",
-      "price": 15000.0,
-      "oldPrice": 17000.0,
+      "price": 15000,
+      "oldPrice": 17000,
       "reviews": 90,
       "image": "image 2.svg"
     },
     {
       "id": 3,
       "name": "Humankind digital game Deluxe",
-      "price": 150.0,
-      "oldPrice": 170.0,
+      "price": 150,
+      "oldPrice": 170,
       "reviews": 125,
       "image": "image 3.svg"
     },
     {
       "id": 4,
       "name": "Humankind digital game Deluxe",
-      "price": 150.0,
-      "oldPrice": 170.0,
+      "price": 150,
+      "oldPrice": 170,
       "reviews": 125,
       "image": "image 4.svg"
+    }
+  ],
+  "username": [
+    {
+      "username": "asdasdasd",
+      "email": "anvaprograming1717@gmail.com",
+      "password": "asrf3wa5tr43w",
+      "id": 1
+    },
+    {
+      "username": "t0j39046jtj436tw0i3",
+      "email": "crbobur777@gmail.com",
+      "password": "tkow43k5t0wk43-[p",
+      "id": 2
     }
   ]
 }

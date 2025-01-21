@@ -1,0 +1,28 @@
+.profile-container {
+    padding: 20px;
+    background-color: #0d1117;
+    color: white;
+  }
+  
+  .profile-header h1 {
+    font-size: 2rem;
+    color: gold;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    color: gold;
+  }
+  
