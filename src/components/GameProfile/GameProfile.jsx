@@ -1,53 +1,53 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import './GameProfile.scss';
 
 const GameProfile = () => {
-  const { id } = useParams();
-
-  const games = [
+  const cards = [
     {
       id: 1,
-      title: 'Heroic Dungeon Keys',
-      description: 'Access Burning Crusade dungeons on heroic difficulty.',
-      image: '/public/image1.svg',
-      price: 220,
-      details: 'Detailed description about Heroic Dungeon Keys.',
+      image: '/public/image8.svg', // Замените на фактические пути к вашим изображениям
+      title: 'Sylvanas Windrunner Kill',
+      price: '220K',
+      description: 'Heroic Dungeon Keys',
+      subtitle: 'Access Burning Crusade dungeons on heroic difficulty.'
     },
     {
       id: 2,
-      title: 'Gladiator Title Boost',
-      description: 'Get Gladiator title in WoW Shadowlands.',
-      image: 'https://via.placeholder.com/600x400',
-      price: 300,
-      details: 'Detailed description about Gladiator Title Boost.',
+      image: '/public/image9.svg',
+      title: 'Sylvanas Windrunner Kill',
+      price: '220K',
+      description: 'Gladiator Title Boost',
+      subtitle: 'Get Gladiator title in WoW Shadowlands.'
     },
     {
       id: 3,
+      image: '/public/image10.svg',
       title: 'Sylvanas Windrunner Kill',
-      description: 'Defeat Sylvanas Windrunner in WoW.',
-      image: 'https://via.placeholder.com/600x400',
-      price: 400,
-      details: 'Detailed description about Sylvanas Windrunner Kill.',
+      price: '220K',
+      description: 'Sylvanas Windrunner Kill',
+      subtitle: 'Defeat Sylvanas Windrunner in WoW.'
     },
   ];
 
-  const game = games.find((game) => game.id === parseInt(id));
-
-  if (!game) {
-    return <div>Game not found</div>;
-  }
-
   return (
     <div className="profile-container">
-      <div className="profile-header">
-        <h1>{game.title}</h1>
-        <p>{game.description}</p>
-      </div>
-      <div className="profile-content">
-        <img src={game.image} alt={game.title} className="profile-image" />
-        <p>{game.details}</p>
-        <span className="price">{game.price}$</span>
+      <div className="cards">
+        {cards.map(card => (
+          <div key={card.id} className="card">
+            <img src={card.image} alt={card.title} className="card-image" />
+            <div className="card-content">
+              <div className="card-header">
+                <span className="stars">★★★★★</span>
+              </div>
+              <h2 className="card-title">{card.title}</h2>
+              <p className="card-price">{card.price} <span className="currency">🪙</span></p>
+            </div>
+            <div className="card-footer">
+              <h4 className="card-description">{card.description}</h4>
+              <p className="card-subtitle">{card.subtitle}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

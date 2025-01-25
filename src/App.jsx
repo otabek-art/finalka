@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer'
 import Gamess from './pages/Gamess'
 import GameProfile from './components/GameProfile/GameProfile'
 import Registration from './components/Registration/Registration'
+import Basket from './components/Basket/Basket'
 
 const App = () => {
   return (
@@ -20,8 +21,9 @@ const App = () => {
 <Route path='/contact' element ={<Home/>}/>
 
 <Route path='/games' element ={<Gamess/>}/>
-<Route path="/games/:id" element={<GameProfile />} />
+<Route path="/GameProfile/:id" element={<GameProfile />} />
 <Route path='/Registration' element ={<Registration/>}/>
+<Route path='/Basket' element ={<Basket/>} />
 <Route path='/admin' element = {<Admin/>} />
 
 </Routes>

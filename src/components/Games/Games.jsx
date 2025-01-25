@@ -13,21 +13,21 @@ const Games = () => {
       id: 1,
       title: 'Heroic Dungeon Keys',
       description: 'Access Burning Crusade dungeons on heroic difficulty.',
-      image: 'https://via.placeholder.com/300x200', // Замените на свои изображения
+      image: '/public/image8.svg', // Замените на свои изображения
       price: 220,
     },
     {
       id: 2,
       title: 'Gladiator Title Boost',
       description: 'Get Gladiator title in WoW Shadowlands.',
-      image: 'https://via.placeholder.com/300x200', // Замените на свои изображения
+      image: '/public/image9.svg', // Замените на свои изображения
       price: 300,
     },
     {
       id: 3,
       title: 'Sylvanas Windrunner Kill',
       description: 'Defeat Sylvanas Windrunner in WoW.',
-      image: 'https://via.placeholder.com/300x200', // Замените на свои изображения
+      image: '/public/image10.svg', // Замените на свои изображения
       price: 400,
     },
   ];
@@ -61,7 +61,7 @@ const Games = () => {
               <p>{game.description}</p>
               <div className="game-footer">
                 <span className="game-price">{game.price}$</span>
-                <Link to={`/game/${game.id}`} className="view-profile">
+                <Link to={`/GameProfile/${game.id}`}  className="view-profile">
                   View Profile
                 </Link>
               </div>
