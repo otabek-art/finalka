@@ -9,6 +9,7 @@ import Gamess from './pages/Gamess'
 import GameProfile from './components/GameProfile/GameProfile'
 import Registration from './components/Registration/Registration'
 import Basket from './components/Basket/Basket'
+import About from './pages/About'
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
 
 <Routes>
 <Route path='/' element ={<Home/>}/>
-<Route path='/about' element ={<Home/>}/>
+<Route path='/about' element ={<About/>}/>
 <Route path='/contact' element ={<Home/>}/>
 
 <Route path='/games' element ={<Gamess/>}/>

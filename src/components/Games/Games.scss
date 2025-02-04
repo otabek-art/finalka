@@ -36,3 +36,27 @@
   font-weight: bold;
   text-decoration: none;
 }
+
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: gold;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: darkgoldenrod;
+  }
+}
+
+
+.games-title{
+  color: #fff;
+}

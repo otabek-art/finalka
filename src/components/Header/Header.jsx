@@ -7,6 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
+    
 
     <header className="header">
     <img className='header-logo' src="https://insideupgames.com/wp-content/uploads/2018/01/icon-IUG.png" alt="" />
