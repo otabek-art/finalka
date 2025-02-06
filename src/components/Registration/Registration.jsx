@@ -42,6 +42,7 @@ const Registration = () => {
   };
 
   return (
+    <>
     <div className="registration-container">
       <h1>Register</h1>
       {success && <p className="success-message">Registration successful!</p>}
@@ -56,7 +57,7 @@ const Registration = () => {
             value={formData.username}
             onChange={handleChange}
             required
-          />
+            />
         </div>
         <div className="form-group">
           <label htmlFor="email">Email</label>
@@ -67,7 +68,7 @@ const Registration = () => {
             value={formData.email}
             onChange={handleChange}
             required
-          />
+            />
         </div>
         <div className="form-group">
           <label htmlFor="password">Password</label>
@@ -78,13 +79,14 @@ const Registration = () => {
             value={formData.password}
             onChange={handleChange}
             required
-          />
+            />
         </div>
         <button type="submit" className="submit-button">
           Register
         </button>
       </form>
     </div>
+            </>
   );
 };
 

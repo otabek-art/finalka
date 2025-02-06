@@ -5,8 +5,8 @@ import { Navigation, Pagination } from "swiper/modules";
 import { CartContext } from "../Context/CartContext";
 import { FaShoppingCart } from "react-icons/fa";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
+
 import "./Games.scss";
 
 const Games = () => {

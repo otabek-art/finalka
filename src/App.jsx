@@ -10,6 +10,7 @@ import GameProfile from './components/GameProfile/GameProfile'
 import Registration from './components/Registration/Registration'
 import Basket from './components/Basket/Basket'
 import About from './pages/About'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
@@ -19,7 +20,7 @@ const App = () => {
 <Routes>
 <Route path='/' element ={<Home/>}/>
 <Route path='/about' element ={<About/>}/>
-<Route path='/contact' element ={<Home/>}/>
+<Route path='/contact' element ={<Contact/>}/>
 
 <Route path='/games' element ={<Gamess/>}/>
 <Route path="/GameProfile/:id" element={<GameProfile />} />

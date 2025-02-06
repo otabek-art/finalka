@@ -1,0 +1,57 @@
+.best-epic {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 150px;
+  }
+  
+  .best-epic__image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .best-epic__info {
+    color: white;
+    max-width: 400px;
+  }
+  
+  .best-epic__info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .best-epic__info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .best-epic__info a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .best-epic__info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Адаптив для мобилок */
+  @media (max-width: 768px) {
+    .best-epic {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .best-epic__image img {
+      width: 100%;
+    }
+  }
+  

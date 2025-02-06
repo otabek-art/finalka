@@ -1,60 +1,69 @@
 .about {
-    padding: 50px 20px;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 24px;
+
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__wrap {
     display: flex;
-    justify-content: center;
-  
-    .container {
-      max-width: 1200px;
-      width: 100%;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
       text-align: center;
     }
-  
-    &__title {
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center; // Центрируем заголовок
-      margin-bottom: 40px;
-    }
-  
-    &__wrap {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      text-align: left;
-  
-      @media (max-width: 768px) {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  
-    &__image {
-      width: 300px;
+  }
+
+  &__image {
+    flex-shrink: 0;
+    flex-grow: 1; // Позволяет изображению расти
+    
+
+    img {
+      width: 500px !important; 
       height: 300px;
-      background-color: #ccc;
       border-radius: 10px;
-  
+
       @media (max-width: 768px) {
         width: 100%;
         height: auto;
-        aspect-ratio: 1/1;
       }
     }
-  
-    &__content {
-      flex: 1;
-    }
-  
-    &__subtitle {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-  
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 10px;
+  }
+
+  &__content {
+    flex: 1;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      text-align: center;
     }
   }
-  
+
+  &__subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+}

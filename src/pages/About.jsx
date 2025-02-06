@@ -1,15 +1,18 @@
 import React from 'react'
+import Steam from '../components/Steam/Steam'
+import EpicGames from '../components/EpicGames/EpicGames'
+import BestSteam from '../components/BestSteam/BestSteam'
+import BestEpic from '../components/BestEpic/BestEpic'
+import Inside from '../components/Inside/Inside'
 
 const About = () => {
   return (
 <>
-<section className="about">
-    <div className="container">
-        <div className="about__wrap">
-<h1>There are different types of games by type, fantasy, fighting, history but did you know about game stores?</h1>
-        </div>
-    </div>
-</section>
+<Steam/>
+<EpicGames/>
+<BestSteam/>
+<BestEpic/>
+<Inside/>
 </>
   )
 }
