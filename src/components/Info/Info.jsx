@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "Info.scss"
+import "./Info.scss"
 
 const TELEGRAM_BOT_TOKEN = "7640890674:AAE0mxdRfHJCXrZXFMnOnig53RxshoE2xTA";
 const TELEGRAM_CHAT_ID = "1058132486";
@@ -60,4 +60,3 @@ export default function ContactForm() {
   );
 }
 
-export default ContactForm;

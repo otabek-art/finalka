@@ -1,0 +1,40 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  @media (max-width:700px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width:500px) {
+    grid-template-columns:1fr 1fr;
+  }
+  @media (max-width:400px) {
+    grid-template-columns: 1fr;
+  }
+  
+  
+}
+
+.menu {
+  background-color: #2a254b;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.form {
+  input {
+    padding: 12px;
+
+  }
+
+  button {
+    padding: 12px;
+  }
+}
