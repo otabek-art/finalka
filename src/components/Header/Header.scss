@@ -19,6 +19,10 @@
     object-fit: contain;
     margin-left: 150px;
 
+    @media (max-width: 750px) {
+      margin-left: 0;
+    }
+
     span {
       color: #ff4b88;
     }

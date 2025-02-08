@@ -1,5 +1,6 @@
 import React from 'react';
 import './Robot.scss';
+import { Link } from 'react-router-dom';
 
 const Robot = () => {
   return (
@@ -27,7 +28,7 @@ const Robot = () => {
             Portal, Gaming Online News Portal, and other News services websites. It is suitable
             for any kind of small business activity.
           </p>
-          <button className='explore-button '>Explore More</button>
+          <Link to="/about" className='explore-button '>Explore More</Link>
        
         </div>
       </div>

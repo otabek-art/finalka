@@ -32,7 +32,7 @@ const Catalog = () => {
   }, []);
 
   return (
-    <section className="catalog">
+    <section to="/catalog" className="catalog">
       <h2 data-aos="fade-down">Our Featured Game</h2>
       <p className="catalog-description" data-aos="fade-up">
         Gaming and Sports Template that is designed to build modern Online Game,

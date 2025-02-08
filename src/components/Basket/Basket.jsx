@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { CartContext } from "../Context/CartContext"; // С большой буквы
+import { CartContext } from "../Context/CartContext";
 import { FaTrash } from "react-icons/fa";
 import "./Basket.scss";
 import { Link } from "react-router-dom";
 
 const Basket = () => {
-  const { cart, removeFromCart } = useContext(CartContext);
+  const { cart, removeFromCart, updateQuantity } = useContext(CartContext);
 
   return (
     <div className="basket-container">
@@ -24,12 +24,17 @@ const Basket = () => {
               <div className="basket-item-details">
                 <h3>{item.title}</h3>
                 <p>{item.price}$</p>
+                <div className="quantity-control">
+                  <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</button>
+                  <span>{item.quantity}</span>
+                  <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
+                </div>
               </div>
               <button
                 className="remove-item"
                 onClick={() => removeFromCart(item.id)}
               >
-                <FaTrash />
+                <FaTrash className="trash-icon" />
               </button>
             </div>
           ))}

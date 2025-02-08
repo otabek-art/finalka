@@ -15,4 +15,14 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+} 
+
+#root{
+    height: 100dvh ;
+    display: flex;
+    flex-direction: column;
+
+    footer{
+        margin-top: auto;
+    }
 }

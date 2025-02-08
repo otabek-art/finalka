@@ -1,5 +1,6 @@
 import React from "react";
 import "./Section.scss";
+import { Link } from "react-router-dom";
 
 const Section = () => {
   return (
@@ -18,9 +19,9 @@ const Section = () => {
           activity.
         </p>
         <div className="section__buttons">
-          <a href="#get-started" className="btn btn--primary">
+          <Link  to="/Registration" href="#get-started" className="btn btn--primary">
             Get Started for Free
-          </a>
+          </Link>
           <a target="_blank" href="https://youtu.be/7bvocbK7CaI?si=j--DzvUHQXDej5D1" className="btn btn--secondary">
             <span className="icon">▶</span> Watch Trailer
           </a>
